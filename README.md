@@ -2,56 +2,62 @@
   <img src="./assets/support-console.svg" width="100%" alt="Adriano Support Console">
 </p>
 
+<br>
+
+## `> about_me`
+
 ```console
-adriano@support:~$ whoami
+adriano@support:~$ cat profile.txt
 
-Technical professional with a software development background.
+I have a software development background and enjoy solving technical problems.
 
-I understand how software is built,
-which helps me understand why it breaks.
+My experience building SaaS products helps me investigate issues,
+understand integrations and communicate solutions clearly.
+```
 
-> capabilities
+## `> support_toolkit`
 
-✓ Technical Troubleshooting
-✓ REST APIs
-✓ Webhooks
-✓ SQL / PostgreSQL
-✓ SaaS Integrations
-✓ Automation
-✓ Debugging
-✓ Technical Communication
+```text
+Investigation         APIs & Integrations       Systems
+──────────────────    ─────────────────────     ────────────────
 
-> stack
+Troubleshooting       REST APIs                  PostgreSQL
+Debugging             Webhooks                   SQL
+Log Analysis          Stripe                     Docker
+Root Cause Analysis   n8n                        Git
+Technical Support     SaaS Integrations          Supabase
+```
 
-Bubble       REST APIs      PostgreSQL
-Supabase     Stripe         n8n
-Docker       Git            Webhooks
-JavaScript   SQL            SaaS
+## `> incident_history`
 
-> support-lab
+```text
+INCIDENT                                         STATUS
+─────────────────────────────────────────────    ─────────────
 
-[01] API Authentication Error
-     Status: RESOLVED
+#001  API Authentication Error                   [ RESOLVED ]
+#002  Webhook Processing Failure                 [ RESOLVED ]
+#003  Payment Status Mismatch                    [ RESOLVED ]
+#004  Automation Workflow Error                  [ RESOLVED ]
+```
 
-[02] Webhook Processing Failure
-     Status: RESOLVED
+> **Case files are being documented.**  
+> Real-world troubleshooting scenarios covering APIs, webhooks, integrations and automation.
 
-[03] Payment Status Mismatch
-     Status: RESOLVED
+## `> current_mission`
 
-[04] Automation Workflow Error
-     Status: RESOLVED
-
-> current_status
-
-Location     Dublin, Ireland
+```text
 Focus        Technical Support
 Environment  SaaS
-Status       ONLINE
+Location     Dublin, Ireland
 
-<div align="center">
-> contact
+Goal         Helping users solve technical problems
+             while understanding what happens behind the product.
+```
 
-LinkedIn · Portfolio
+## `> connect`
 
-</div>
+<p align="left">
+  <a href="https://www.linkedin.com/in/adriano-aguiar">LinkedIn</a>
+  &nbsp;•&nbsp;
+  <a href="https://www.adrianoaguiar.tech">Portfolio</a>
+</p>
