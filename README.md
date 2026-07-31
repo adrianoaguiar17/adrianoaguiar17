@@ -33,7 +33,7 @@ Technical Support     SaaS Integrations          Supabase
 | ID | Incident | Area | Status |
 |:---|:---|:---|:---:|
 | [`INC-001`](./incidents/INC-001-api-authentication.md) | **API Authentication Error** | API · Authentication | `RESOLVED` |
-| `INC-002` | Webhook Processing Failure | Webhooks · Logs | `COMING SOON` |
+| [`INC-002`](./incidents/INC-002-webhook-failure.md) | **Webhook Processing Failure** | Webhooks · Logs | `RESOLVED` |
 | `INC-003` | Payment Status Mismatch | Payments · Integration | `COMING SOON` |
 | `INC-004` | Automation Workflow Error | Automation · n8n | `COMING SOON` |
 
