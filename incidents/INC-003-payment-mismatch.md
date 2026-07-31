@@ -7,7 +7,7 @@
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <strong>INC-003 / 004</strong>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  NEXT INCIDENT →
+  <a href="./INC-004-automation-failure.md">NEXT INCIDENT →</a>
 </p>
 
 <br>
@@ -223,7 +223,7 @@ Following the same transaction through each layer makes it possible to identify 
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md">SUPPORT CONSOLE</a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  NEXT INCIDENT →
+  <a href="./INC-004-automation-failure.md">NEXT INCIDENT →</a>
 </p>
 
 <br>
