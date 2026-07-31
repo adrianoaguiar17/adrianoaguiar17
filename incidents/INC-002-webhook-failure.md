@@ -7,7 +7,7 @@
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <strong>INC-002 / 004</strong>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  NEXT INCIDENT →
+  <a href="./INC-003-payment-mismatch.md">NEXT INCIDENT →</a>
 </p>
 
 <br>
@@ -171,7 +171,7 @@ Each layer can succeed or fail independently.
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="../README.md">SUPPORT CONSOLE</a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  NEXT INCIDENT →
+  <a href="./INC-003-payment-mismatch.md">NEXT INCIDENT →</a>
 </p>
 
 <br>
