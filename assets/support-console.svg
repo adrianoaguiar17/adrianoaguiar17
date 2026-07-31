@@ -1,0 +1,190 @@
+<svg width="900" height="460" viewBox="0 0 900 460"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="900" height="460" rx="16" fill="#0d1117"/>
+
+  <rect x="1" y="1" width="898" height="458" rx="15"
+        fill="none" stroke="#30363d"/>
+
+  <!-- Window controls -->
+  <circle cx="28" cy="27" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="27" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="27" r="6" fill="#28c840"/>
+
+  <text x="450" y="32"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="13"
+        fill="#8b949e">
+    adriano-support-console
+  </text>
+
+  <line x1="0" y1="52" x2="900" y2="52"
+        stroke="#30363d"/>
+
+  <!-- Prompt -->
+  <text x="36" y="92"
+        font-family="monospace"
+        font-size="16"
+        fill="#58a6ff">
+    adriano@support
+  </text>
+
+  <text x="165" y="92"
+        font-family="monospace"
+        font-size="16"
+        fill="#8b949e">
+    ~ %
+  </text>
+
+  <text x="205" y="92"
+        font-family="monospace"
+        font-size="16"
+        fill="#f0f6fc">
+    whoami
+  </text>
+
+  <!-- Main message -->
+  <text x="36" y="132"
+        font-family="monospace"
+        font-size="20"
+        font-weight="bold"
+        fill="#f0f6fc">
+    Technical Support with a builder's mindset
+  </text>
+
+  <text x="36" y="160"
+        font-family="monospace"
+        font-size="14"
+        fill="#8b949e">
+    SaaS · APIs · Integrations · Troubleshooting
+  </text>
+
+  <!-- Info -->
+  <text x="36" y="212"
+        font-family="monospace"
+        font-size="13"
+        fill="#8b949e">
+    LOCATION
+  </text>
+
+  <text x="165" y="212"
+        font-family="monospace"
+        font-size="13"
+        fill="#f0f6fc">
+    Dublin, Ireland
+  </text>
+
+  <text x="36" y="240"
+        font-family="monospace"
+        font-size="13"
+        fill="#8b949e">
+    STATUS
+  </text>
+
+  <circle cx="171" cy="236" r="5" fill="#3fb950"/>
+
+  <text x="185" y="240"
+        font-family="monospace"
+        font-size="13"
+        fill="#3fb950">
+    ONLINE
+  </text>
+
+  <text x="36" y="268"
+        font-family="monospace"
+        font-size="13"
+        fill="#8b949e">
+    CURRENT FOCUS
+  </text>
+
+  <text x="165" y="268"
+        font-family="monospace"
+        font-size="13"
+        fill="#f0f6fc">
+    Technical Support
+  </text>
+
+  <!-- Command -->
+  <text x="36" y="316"
+        font-family="monospace"
+        font-size="14"
+        fill="#58a6ff">
+    &gt; system_check
+  </text>
+
+  <!-- Checks -->
+  <text x="56" y="348"
+        font-family="monospace"
+        font-size="13"
+        fill="#c9d1d9">
+    REST APIs
+  </text>
+
+  <text x="310" y="348"
+        font-family="monospace"
+        font-size="13"
+        fill="#3fb950">
+    [ OK ]
+  </text>
+
+  <text x="56" y="374"
+        font-family="monospace"
+        font-size="13"
+        fill="#c9d1d9">
+    Webhooks
+  </text>
+
+  <text x="310" y="374"
+        font-family="monospace"
+        font-size="13"
+        fill="#3fb950">
+    [ OK ]
+  </text>
+
+  <text x="470" y="348"
+        font-family="monospace"
+        font-size="13"
+        fill="#c9d1d9">
+    PostgreSQL
+  </text>
+
+  <text x="720" y="348"
+        font-family="monospace"
+        font-size="13"
+        fill="#3fb950">
+    [ OK ]
+  </text>
+
+  <text x="470" y="374"
+        font-family="monospace"
+        font-size="13"
+        fill="#c9d1d9">
+    Automation
+  </text>
+
+  <text x="720" y="374"
+        font-family="monospace"
+        font-size="13"
+        fill="#3fb950">
+    [ OK ]
+  </text>
+
+  <text x="56" y="410"
+        font-family="monospace"
+        font-size="13"
+        fill="#c9d1d9">
+    Troubleshooting
+  </text>
+
+  <text x="310" y="410"
+        font-family="monospace"
+        font-size="13"
+        fill="#3fb950">
+    [ READY ]
+  </text>
+
+  <!-- Cursor -->
+  <rect x="56" y="426" width="9" height="15" fill="#58a6ff"/>
+
+</svg>
