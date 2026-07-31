@@ -7,7 +7,7 @@
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <strong>INC-001 / 004</strong>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  NEXT INCIDENT →
+  <a href="./INC-002-webhook-failure.md">NEXT INCIDENT →</a>
 </p>
 
 <br>
@@ -129,7 +129,7 @@ Investigating each layer independently helps identify the root cause before chan
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <strong>INC-001 / 004</strong>
   &nbsp;&nbsp;•&nbsp;&nbsp;
-  NEXT INCIDENT →
+  <a href="./INC-002-webhook-failure.md">NEXT INCIDENT →</a>
 </p>
 
 <br>
