@@ -30,18 +30,16 @@ Technical Support     SaaS Integrations          Supabase
 
 ## `> incident_history`
 
-```text
-INCIDENT                                         STATUS
-─────────────────────────────────────────────    ─────────────
+| ID | Incident | Area | Status |
+|:---|:---|:---|:---:|
+| [`INC-001`](./incidents/INC-001-api-authentication.md) | **API Authentication Error** | API · Authentication | `RESOLVED` |
+| `INC-002` | Webhook Processing Failure | Webhooks · Logs | `COMING SOON` |
+| `INC-003` | Payment Status Mismatch | Payments · Integration | `COMING SOON` |
+| `INC-004` | Automation Workflow Error | Automation · n8n | `COMING SOON` |
 
-#001  API Authentication Error                   [ RESOLVED ]
-#002  Webhook Processing Failure                 [ RESOLVED ]
-#003  Payment Status Mismatch                    [ RESOLVED ]
-#004  Automation Workflow Error                  [ RESOLVED ]
-```
+**→ [`OPEN INC-001 CASE FILE`](./incidents/INC-001-api-authentication.md)**
 
-> **Case files are being documented.**  
-> Real-world troubleshooting scenarios covering APIs, webhooks, integrations and automation.
+<sub>Cases include lab scenarios and sanitized real-world troubleshooting experiences. Each case is clearly identified.</sub>
 
 ## `> current_mission`
 
