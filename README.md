@@ -1,18 +1,6 @@
-<div align="center">
-
-# ADRIANO SUPPORT CONSOLE
-
-`SYSTEM: ONLINE`
-
-### Technical Support with a builder's mindset
-
-Dublin, Ireland
-
-SaaS · APIs · Integrations · Troubleshooting
-
-</div>
-
----
+<p align="center">
+  <img src="./assets/support-console.svg" width="100%" alt="Adriano Support Console">
+</p>
 
 ```console
 adriano@support:~$ whoami
