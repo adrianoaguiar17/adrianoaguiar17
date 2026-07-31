@@ -35,7 +35,7 @@ Technical Support     SaaS Integrations          Supabase
 | [`INC-001`](./incidents/INC-001-api-authentication.md) | **API Authentication Error** | API · Authentication | `RESOLVED` |
 | [`INC-002`](./incidents/INC-002-webhook-failure.md) | **Webhook Processing Failure** | Webhooks · Logs | `RESOLVED` |
 | [`INC-003`](./incidents/INC-003-payment-mismatch.md) | **Payment Status Mismatch** | Payments · Integration | `RESOLVED` |
-| `INC-004` | Automation Workflow Error | Automation · n8n | `COMING SOON` |
+| [`INC-004`](./incidents/INC-004-automation-failure.md) | **Automation Workflow Error** | Automation · API | `RESOLVED` |
 
 **→ [`OPEN INC-001 CASE FILE`](./incidents/INC-001-api-authentication.md)**
 
