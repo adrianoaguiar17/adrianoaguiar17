@@ -1,16 +1,16 @@
-# `INC-001` — API Authentication Error
+<p align="center">
+  <img src="../assets/inc-001.svg" width="100%" alt="INC-001 API Authentication Error">
+</p>
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│ SUPPORT INCIDENT                                            │
-├─────────────────────────────────────────────────────────────┤
-│ ID          INC-001                                         │
-│ STATUS      RESOLVED                                        │
-│ SEVERITY    MEDIUM                                          │
-│ CATEGORY    API / Authentication                            │
-│ TYPE        LAB CASE                                        │
-└─────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <a href="../README.md">← SUPPORT CONSOLE</a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <strong>INC-001 / 004</strong>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  NEXT INCIDENT →
+</p>
+
+<br>
 
 ## `> issue`
 
@@ -26,15 +26,7 @@ The integration had worked previously, and no application errors were visible to
 
 ## `> investigation`
 
-```text
-[01] Reproduce the request                         [ OK ]
-[02] Confirm endpoint and HTTP method              [ OK ]
-[03] Inspect authentication header                 [ OK ]
-[04] Validate token                                [ OK ]
-[05] Compare application environments              [ FOUND ]
-```
-
-### `01 — Reproduce`
+### `01 — Reproduce the issue`
 
 The request was reproduced outside the application to isolate the API from the client interface.
 
@@ -44,47 +36,37 @@ curl -X GET \
   -H "Authorization: Bearer ********"
 ```
 
-Result:
-
-```http
-HTTP/1.1 401 Unauthorized
+```text
+Result        401 Unauthorized
+UI involved   NO
+API involved  YES
 ```
 
-The issue was therefore not limited to the application UI.
+This confirmed that the issue was occurring at the API layer.
 
-### `02 — Endpoint`
+### `02 — Validate the request`
 
-The endpoint and HTTP method matched the API documentation.
+The endpoint and HTTP method matched the expected API configuration.
 
 ```text
-Method      GET
-Endpoint    /api/v1/customers
-
-Result      VALID
+Method        GET                         [ OK ]
+Endpoint      /api/v1/customers           [ OK ]
+Auth Header   Bearer ********             [ OK ]
 ```
 
-### `03 — Authentication`
+The authentication header was present and correctly formatted.
 
-The request contained the expected authentication header.
+### `03 — Validate the credential`
 
-```text
-Authorization: Bearer ********
+The credential itself was valid.
 
-Header      PRESENT
-Format      VALID
-```
-
-This suggested that the problem was related to the credential itself rather than a missing authentication header.
-
-### `04 — Token validation`
-
-The token was valid, but its environment did not match the requested API environment.
+However, comparing the environments revealed the mismatch:
 
 ```text
-API environment      PRODUCTION
-Token environment    DEVELOPMENT
-
-                     ↑ MISMATCH
+API ENVIRONMENT       PRODUCTION
+TOKEN ENVIRONMENT     DEVELOPMENT
+                      ───────────
+                      MISMATCH
 ```
 
 ## `> root_cause`
@@ -95,13 +77,16 @@ ROOT CAUSE FOUND
 The production integration was using
 a development API token.
 
-The token itself was valid, but it was
-not authorized for the production environment.
+Authentication was correctly implemented,
+but the credential belonged to the wrong
+environment.
 ```
 
 ## `> resolution`
 
-The development credential was replaced with the correct production credential and the request was tested again.
+The development credential was replaced with the correct production credential.
+
+The same request was executed again:
 
 ```http
 GET /api/v1/customers
@@ -109,37 +94,44 @@ GET /api/v1/customers
 HTTP/1.1 200 OK
 ```
 
+Validation:
+
 ```text
-Authentication      [ OK ]
-API Request         [ OK ]
-Response            [ 200 ]
-Incident            [ RESOLVED ]
+Authentication        [ OK ]
+API Request           [ OK ]
+API Response          [ 200 ]
+Integration           [ WORKING ]
+Incident              [ RESOLVED ]
 ```
 
 ## `> prevention`
 
 ```text
-✓ Keep development and production credentials separated
-✓ Use environment variables for API credentials
-✓ Avoid hardcoded tokens
-✓ Verify environment before debugging application logic
-✓ Never expose credentials in logs
+[✓] Separate development and production credentials
+[✓] Store credentials using environment variables
+[✓] Avoid hardcoded API tokens
+[✓] Validate environment during authentication troubleshooting
+[✓] Never expose credentials in logs
 ```
 
 ## `> takeaway`
 
-A `401 Unauthorized` does not necessarily mean authentication is missing.
+A `401 Unauthorized` does not necessarily mean that authentication is missing.
 
-The authentication mechanism may be correct while the credential is invalid for the environment being accessed.
+The authentication mechanism can be implemented correctly while the credential is invalid for the environment being accessed.
 
-Troubleshooting the request layer by layer helps isolate the problem before changing application logic.
-
----
-
-### `> navigation`
-
-[← Back to Support Console](../README.md) · **INC-001 / 004** · Next Incident →
+Investigating each layer independently helps identify the root cause before changing application logic.
 
 ---
 
-<sub>LAB CASE — Created to demonstrate a structured technical support troubleshooting process. No real credentials, customer information or production systems are represented.</sub>
+<p align="center">
+  <a href="../README.md">← BACK TO SUPPORT CONSOLE</a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <strong>INC-001 / 004</strong>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  NEXT INCIDENT →
+</p>
+
+<br>
+
+<sub><strong>LAB CASE</strong> — Scenario created to demonstrate a structured Technical Support investigation. No real customer data, credentials or production systems are represented.</sub>
